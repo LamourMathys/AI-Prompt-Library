@@ -21,4 +21,4 @@ const ulElement = document.querySelector("#prompt-list");
 
            ulElement.appendChild(liElement);
         }
-      });
+});

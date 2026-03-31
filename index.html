@@ -9,7 +9,7 @@
 <body class="style">
   <h1>AI Prompt Library</h1>
 
-  <form action="#" method="post">
+  <form id="prompt-form"action="#" method="post">
     <ul>
       <li>
         <label for="titre">Titre :</label>
@@ -24,11 +24,12 @@
         <textarea id="prompt" name="prompt"></textarea>
       </li>
     </ul>
-    <div class="button">
-      <button type="submit">Envoyer les infos du prompt</button>
-    </div>
   </form>
-
+  
+  <div class="button">
+      <button type="submit" form="prompt-form">Envoyer les infos du prompt</button>
+  </div>
+  
   <ul id="prompt-list"></ul>
 
   <script src="app.js"></script>
