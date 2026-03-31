@@ -32,15 +32,26 @@
   <ul id="prompt-list"></ul>
 
   <script>
-    const ulElement = document.querySelector("#prompt-list");
+    const ulElement_t = document.querySelector("#prompt-list");
+    const ulElement_c = document.querySelector("#prompt-list");
+    const ulElement_p = document.querySelector("#prompt-list");
 
     fetch("/prompt.json")
       .then((response) => response.json())
       .then((prompts) => {
         for (const prompt of prompts) {
-          const liElement = document.createElement("li");
-          liElement.innerText = prompt.title;
-          ulElement.appendChild(liElement);
+           const liElement_t = document.createElement("li");
+           liElement_t.className = "display-card";
+           liElement_t.innerText = prompt.title;
+           ulElement_t.appendChild(liElement_t);
+
+           const liElement_c = document.createElement("li");
+           liElement_c.innerText = prompt.category;
+           ulElement_c.appendChild(liElement_c);
+
+           const liElement_p = document.createElement("li");
+           liElement_p.innerText = prompt.prompt;
+           ulElement_p.appendChild(liElement_p);
         }
       });
   </script>

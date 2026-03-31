@@ -1,3 +1,7 @@
+:root {
+    --card-white: #cdcdcd;
+}
+
 form {
   margin: 0 auto;
   width: 400px;
@@ -56,4 +60,14 @@ textarea {
 
 button {
   margin-left: 0.5em;
+}
+
+
+.display-card {
+    background: var(--card-white);
+    padding: 2rem 1rem;
+    border-radius: 24px;
+    margin-bottom: 1rem;
+    min-height: 12px;
+    justify-content: center;
 }
