@@ -32,28 +32,31 @@
   <ul id="prompt-list"></ul>
 
   <script>
-    const ulElement_t = document.querySelector("#prompt-list");
-    const ulElement_c = document.querySelector("#prompt-list");
-    const ulElement_p = document.querySelector("#prompt-list");
+    const ulElement = document.querySelector("#prompt-list");
 
     fetch("/prompt.json")
       .then((response) => response.json())
       .then((prompts) => {
         for (const prompt of prompts) {
-           const liElement_t = document.createElement("li");
-           liElement_t.className = "display-card";
-           liElement_t.innerText = prompt.title;
-           ulElement_t.appendChild(liElement_t);
+           const liElement = document.createElement("li");
+           liElement.className = "display-card";
 
-           const liElement_c = document.createElement("li");
-           liElement_c.innerText = prompt.category;
-           ulElement_c.appendChild(liElement_c);
+           const t = document.createElement("div");
+           t.innerText = prompt.title;
+           liElement.appendChild(t);
 
-           const liElement_p = document.createElement("li");
-           liElement_p.innerText = prompt.prompt;
-           ulElement_p.appendChild(liElement_p);
+           const c = document.createElement("div");
+           c.innerText = prompt.category;
+           liElement.appendChild(c);
+
+           const p = document.createElement("div");
+           p.innerText = prompt.prompt;
+           liElement.appendChild(p);
+
+           ulElement.appendChild(liElement);
         }
       });
   </script>
+
 </body>
 </html>

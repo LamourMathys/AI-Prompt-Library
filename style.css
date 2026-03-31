@@ -2,14 +2,18 @@
     --card-white: #cdcdcd;
 }
 
-form {
-  margin: 0 auto;
-  width: 400px;
+h1 {
+  text-align: center;
+}
 
+form {
+  margin: 2rem auto;
+  width: 400px;
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 1em;
 }
+
 
 ul {
   list-style: none;
@@ -65,7 +69,7 @@ button {
 
 .display-card {
     background: var(--card-white);
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 24px;
     margin-bottom: 1rem;
     min-height: 12px;
