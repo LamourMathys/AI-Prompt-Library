@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Prompt Library</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompt Library</title>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body class="style">
-    <h1>AI Prompt Library</h1>
-    <form action="#" method="post">
-    <li>
-      <label for="msg">Titre :</label>
-      <textarea id="msg" name="user_message"></textarea>
-    </li>
-    <li>
-      <label for="msg">Catégorie :</label>
-      <textarea id="msg" name="user_message"></textarea>
-    </li>
-    <li>
-      <label for="msg">Prompt :</label>
-      <textarea id="msg" name="user_message"></textarea>
-    </li>
+  <h1>AI Prompt Library</h1>
+
+  <form action="#" method="post">
+    <ul>
+      <li>
+        <label for="titre">Titre :</label>
+        <textarea id="titre" name="titre"></textarea>
+      </li>
+      <li>
+        <label for="categorie">Catégorie :</label>
+        <textarea id="categorie" name="categorie"></textarea>
+      </li>
+      <li>
+        <label for="prompt">Prompt :</label>
+        <textarea id="prompt" name="prompt"></textarea>
+      </li>
+    </ul>
     <div class="button">
-       <button type="submit">Envoyer les infos du prompt</button>
+      <button type="submit">Envoyer les infos du prompt</button>
     </div>
+  </form>
 
-    <script>
-        const ulElement = document.querySelector("ul");
+  <ul id="prompt-list"></ul>
 
-        fetch("/prompt.json")
-            .then((response) => {
-            return response.json();
-            })
-            .then((users) => {
-            for (const user of users) {
-                const liElement = document.createElement("li");
-                liElement.innerText = user.title;
-                ulElement.appendChild(liElement);
-            }
-            });
-    </script>
+  <script>
+    const ulElement = document.querySelector("#prompt-list");
 
-
-    </form>
+    fetch("/prompt.json")
+      .then((response) => response.json())
+      .then((prompts) => {
+        for (const prompt of prompts) {
+          const liElement = document.createElement("li");
+          liElement.innerText = prompt.title;
+          ulElement.appendChild(liElement);
+        }
+      });
+  </script>
 </body>
 </html>
