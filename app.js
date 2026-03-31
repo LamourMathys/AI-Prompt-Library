@@ -22,3 +22,5 @@ const ulElement = document.querySelector("#prompt-list");
            ulElement.appendChild(liElement);
         }
 });
+
+/*need to add event listener on the form button to save the json of the prompt into the navigator memory*/ 
