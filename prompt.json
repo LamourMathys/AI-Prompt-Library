@@ -8,10 +8,5 @@
     "title": "Créer un post LinkedIn",
     "category": "Marketing",
     "prompt": "Rédige un post LinkedIn pédagogique sur l'apprentissage du code."
-  },
-  {
-    "title": "Traduit de francais a code Web",
-    "category": "Developpement",
-    "prompt": "tu es un profesionnel en francais et en developement tu traduis du francais en code en suivant les inscription"
   }
 ]
