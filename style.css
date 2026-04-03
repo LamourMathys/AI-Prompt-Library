@@ -1,11 +1,24 @@
-form {
-  margin: 0 auto;
-  width: 400px;
-
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
+:root {
+    --card-blue: #6B7C85;
 }
+
+h1 {
+  text-align: center;
+}
+
+body {
+   background: linear-gradient(to bottom right, #75838b, #C7DCE5);
+}
+
+form {
+  margin: 2rem auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #000000;
+  border-radius: 1em;
+  background-color: var(--card-white);
+}
+
 
 ul {
   list-style: none;
@@ -32,7 +45,7 @@ textarea {
   width: 300px;
   box-sizing: border-box;
 
-  border: 1px solid #999;
+  border: 1px solid #000000;
 }
 
 input:focus,
@@ -51,9 +64,24 @@ textarea {
 }
 
 .button {
-  padding-left: 90px; 
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 button {
-  margin-left: 0.5em;
+  display: block;
+  margin: 0 auto;
 }
+
+.display-card {
+    background: var(--card-blue);
+    padding: 1rem 1rem;
+    border-radius: 24px;
+    margin-bottom: 1rem;
+    min-height: 12px;
+    justify-content: center;
+    border: 1px solid #000000;
+}
+
