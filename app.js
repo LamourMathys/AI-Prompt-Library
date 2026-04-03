@@ -32,13 +32,13 @@ const button = document.querySelector("button");
 button.addEventListener("click", (event) => {
     event.preventDefault();
     
-     if (!title || !category || !prompt) return;
-
     const formData = new FormData(document.querySelector("form"));
     const title = formData.get("title");
     const category = formData.get("category");
     const prompt = formData.get("prompt");
  
+    if (!title || !category || !prompt) return;
+
     const liElement = document.createElement("li");
     liElement.className = "display-card";
  
@@ -56,6 +56,5 @@ button.addEventListener("click", (event) => {
  
     ulElement.appendChild(liElement);
 });
-
 
 
