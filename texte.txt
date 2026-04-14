@@ -1,2 +1,2 @@
 ia prompt commit war
-ia prompt commit war2
+ia prompt commit war 2
