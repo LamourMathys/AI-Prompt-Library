@@ -8,5 +8,80 @@
     "title": "Créer un post LinkedIn",
     "category": "Marketing",
     "prompt": "Rédige un post LinkedIn pédagogique sur l'apprentissage du code."
+  },
+  {
+    "title": "Résumer un texte long",
+    "category": "Productivité",
+    "prompt": "Résume le texte suivant en 5 points clés exploitables."
+  },
+  {
+    "title": "Générer des idées de blog",
+    "category": "Marketing",
+    "prompt": "Donne-moi 10 idées de titres d'articles de blog percutants pour le sujet suivant : [Sujet]."
+  },
+  {
+    "title": "Correction de code",
+    "category": "Développement",
+    "prompt": "Identifie l'erreur dans ce bloc de code et propose une version optimisée : [Code]."
+  },
+  {
+    "title": "Simulation d'entretien",
+    "category": "Carrière",
+    "prompt": "Agis comme un recruteur technique et pose-moi 5 questions complexes sur React et le State Management."
+  },
+  {
+    "title": "Rédaction d'e-mail froid",
+    "category": "Ventes",
+    "prompt": "Rédige un e-mail de prospection court et personnalisé pour proposer un service de design UI/UX."
+  },
+  {
+    "title": "Création de script vidéo",
+    "category": "Contenu",
+    "prompt": "Écris un script de 60 secondes pour un TikTok/Reel présentant une astuce de productivité."
+  },
+  {
+    "title": "Analyse de données",
+    "category": "Data",
+    "prompt": "Analyse ces données brutes et dégage les 3 tendances principales que tu observes : [Données]."
+  },
+  {
+    "title": "Planification de voyage",
+    "category": "Loisirs",
+    "prompt": "Crée un itinéraire de 3 jours à Tokyo axé sur la gastronomie locale et la culture tech."
+  },
+  {
+    "title": "Brainstorming de nom",
+    "category": "Marketing",
+    "prompt": "Propose 15 noms originaux et mémorables pour une application de gestion de budget."
+  },
+  {
+    "title": "Simplification de texte",
+    "category": "Rédaction",
+    "prompt": "Réécris ce paragraphe complexe pour le rendre plus fluide et facile à lire, sans perdre le sens original."
+  },
+  {
+    "title": "Traduction contextuelle",
+    "category": "Langues",
+    "prompt": "Traduits ce texte en anglais en adaptant les expressions idiomatiques pour un public américain : [Texte]."
+  },
+  {
+    "title": "Guide étape par étape",
+    "category": "Education",
+    "prompt": "Crée un tutoriel étape par étape pour apprendre à configurer un environnement Docker."
+  },
+  {
+    "title": "Critique constructive",
+    "category": "Design",
+    "prompt": "Agis comme un expert en design et critique constructivement cette description d'interface : [Description]."
+  },
+  {
+    "title": "Méthode de travail",
+    "category": "Productivité",
+    "prompt": "Explique comment appliquer la méthode Pomodoro pour un projet de rédaction créative."
+  },
+  {
+    "title": "Rédaction de FAQ",
+    "category": "Support",
+    "prompt": "Génère une liste de 5 questions fréquemment posées (FAQ) et leurs réponses pour un service de livraison de repas."
   }
 ]
