@@ -28,7 +28,7 @@ If any file (HTML, CSS, JS) has been modified, rebuild the container:
 docker compose down
 docker compose up -d --build
 ```
-
+    
 ## Project Structure
 
 ```
